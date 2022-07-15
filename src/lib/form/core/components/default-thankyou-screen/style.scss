@@ -1,0 +1,35 @@
+.renderer-components-default-thankyou-screen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 26px;
+  padding: 20px 30px;
+  max-width: 700px;
+  line-height: 1.5em;
+  text-align: center;
+  height: 100%;
+  margin: 0 auto;
+  z-index: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.8s opacity;
+  pointer-events: none;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+  }
+
+  @media (max-width: $break-small) {
+    font-size: 22px;
+  }
+}

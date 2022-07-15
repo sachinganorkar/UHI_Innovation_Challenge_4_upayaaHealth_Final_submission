@@ -1,0 +1,20 @@
+.renderer-components-form-footer {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 2222;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 10px 20px;
+  background: transparent;
+  @media (max-width: $break-small) {
+    justify-content: space-between;
+  }
+
+  &.hidden {
+    display: none;
+  }
+}

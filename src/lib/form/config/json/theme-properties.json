@@ -1,0 +1,49 @@
+{
+  "backgroundColor": {
+    "type": "string",
+    "default": "#fff"
+  },
+  "backgroundImage": {
+    "type": "string"
+  },
+  "logo": {
+    "type": "object",
+    "default": {}
+  },
+  "questionsColor": {
+    "type": "string",
+    "default": "#000"
+  },
+  "answersColor": {
+    "type": "string",
+    "default": "#0aa7c2"
+  },
+  "buttonsFontColor": {
+    "type": "string",
+    "default": "#fff"
+  },
+  "buttonsBgColor": {
+    "type": "string",
+    "default": "#22bcaa"
+  },
+  "buttonsBorderRadius": {
+    "type": "number",
+    "default": 25
+  },
+  "errorsFontColor": {
+    "type": "string",
+    "default": "#fff"
+  },
+  "errorsBgColor": {
+    "type": "string",
+    "default": "#f00"
+  },
+  "progressBarFillColor": {
+    "type": "string",
+    "default": "#000"
+  },
+  "progressBarBgColor": {
+    "type": "string",
+    "default": "#ccc"
+  }
+}

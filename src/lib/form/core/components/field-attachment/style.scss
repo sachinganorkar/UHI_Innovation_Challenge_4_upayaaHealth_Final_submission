@@ -1,0 +1,30 @@
+.renderer-core-block-attachment {
+  & {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .renderer-core-block-attachment__image {
+    max-width: 100%;
+  }
+
+  .renderer-core-block-attachment__placeholder {
+    & {
+      width: 270px;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      background-color: rgba(79, 176, 174, 0.2);
+    }
+
+    .renderer-core-block-attachment__placeholder-icon {
+      width: 40px;
+      height: 40px;
+      fill: #7599a5;
+    }
+  }
+}
