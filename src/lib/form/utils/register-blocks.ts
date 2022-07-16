@@ -1,4 +1,5 @@
 import registerDataBlock from "./date";
+import registerDropdownBlock from "./dropdown";
 import registerLongTextBlock from "./long-text";
 import registerMultipleChoiceBlock from "./multiple-choice";
 import registerNumberBlock from "./number";
@@ -10,6 +11,7 @@ const registerCoreBlocks = () => {
   registerNumberBlock();
   registerMultipleChoiceBlock();
   registerLongTextBlock();
+  registerDropdownBlock();
 };
 
 export default registerCoreBlocks;
