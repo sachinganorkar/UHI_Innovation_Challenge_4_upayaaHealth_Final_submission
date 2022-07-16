@@ -10,8 +10,7 @@ import { useSelect } from "@wordpress/data";
 /**
  * Internal Dependencies
  */
-// @ts-expect-error types
-import { css } from "emotion";
+import { css } from "@emotion/css";
 // @ts-expect-error types
 import Loader from "react-loader-spinner";
 

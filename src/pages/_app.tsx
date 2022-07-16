@@ -5,9 +5,9 @@ import { themeChange } from "theme-change";
 import "@fontsource/inter/latin.css";
 
 import defaultSEOConfig from "../../next-seo.config";
-import Layout from "lib/components/layout";
 
 import "lib/styles/globals.css";
+import "lib/form/styles.scss";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
@@ -16,10 +16,10 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   }, []);
 
   return (
-    <Layout>
+    <div>
       <DefaultSeo {...defaultSEOConfig} />
       <Component {...pageProps} />
-    </Layout>
+    </div>
   );
 };
 

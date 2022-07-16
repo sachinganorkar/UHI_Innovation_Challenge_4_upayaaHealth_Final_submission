@@ -1,15 +1,15 @@
+/* eslint-disable import/order */
 /* eslint-disable import/no-cycle */
 /* eslint-disable react/jsx-no-useless-fragment */
 /* eslint-disable react-hooks/rules-of-hooks */
 // eslint-disable-next-line import/order
+import { css } from "@emotion/css";
 import { Fragment } from "@wordpress/element";
 
 /**
  * External Dependencies
  */
 import classNames from "clsx";
-// @ts-expect-error types deps
-import { css } from "emotion";
 
 /**
  * Internal Dependencies

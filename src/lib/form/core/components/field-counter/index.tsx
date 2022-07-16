@@ -2,10 +2,9 @@
 /**
  * External Dependencies
  */
+import { css } from "@emotion/css";
 import { useSelect } from "@wordpress/data";
 import classnames from "clsx";
-// @ts-expect-error no types
-import { css } from "emotion";
 
 /**
  * Internal Dependencies
@@ -44,6 +43,7 @@ const BlockCounter: React.FC = () => {
       )}
       <span className="renderer-components-block-counter__content">
         {blockType?.counterIcon ? (
+          // @ts-expect-error construct issue
           <blockType.counterIcon />
         ) : (
           <ArrowIcon theme={theme} />

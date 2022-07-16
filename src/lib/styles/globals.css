@@ -27,4 +27,10 @@
     @apply mx-auto p-6 sm:p-8;
     max-width: 48rem;
   }
+
+  .questionForm {
+    width: 100%;
+    height: 100vh;
+    max-height: -webkit-fill-available;
+  }
 }

@@ -8,8 +8,7 @@ import { useEffect, useState } from "@wordpress/element";
  * External Depdnencies
  */
 import classnames from "clsx";
-// @ts-expect-error types
-import { css } from "emotion";
+import { css } from "@emotion/css";
 
 /**
  * Internal Dependencies

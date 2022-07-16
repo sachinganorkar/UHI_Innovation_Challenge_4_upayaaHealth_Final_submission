@@ -17,8 +17,7 @@ import { useEffect, useState } from "@wordpress/element";
  * External Dependencies
  */
 import classNames from "clsx";
-// @ts-expect-error types
-import { css } from "emotion";
+import { css } from "@emotion/css";
 // @ts-expect-error types
 import Loader from "react-loader-spinner";
 

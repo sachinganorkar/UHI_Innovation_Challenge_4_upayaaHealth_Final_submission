@@ -12,7 +12,7 @@
     "format": {
       "type": "string",
       "enum": ["MMDDYYYY", "DDMMYYYY", "YYYYMMDD"],
-      "default": "MMDDYYYY"
+      "default": "DDMMYYYY"
     },
     "separator": {
       "type": "string",

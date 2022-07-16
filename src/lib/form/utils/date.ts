@@ -1,4 +1,4 @@
-import { registerBlockType } from "../blocks/registration";
+import { registerBlockType } from "../blocks";
 import { name, metadata, rendererSettings } from "../date-block";
 
 const register = () => {

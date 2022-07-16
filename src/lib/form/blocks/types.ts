@@ -3,6 +3,11 @@ import type React from "react";
 
 import type { BlockAttributes, IconRenderer } from "../types";
 
+import type {
+  SET_BLOCK_RENDERER_SETTINGS,
+  ADD_BLOCK_TYPES,
+} from "./store/constants";
+
 interface ControlsProps {
   id: string;
   attributes: BlockAttributes | undefined;
@@ -80,3 +85,29 @@ export interface BlockTypeSettings
   supports: BlockSupportedFeatures;
   logicalOperators?: LogicalOperator[];
 }
+
+export interface BlockTypeInterface extends BlockTypeSettings {
+  name: string;
+}
+export interface BlocksState {
+  [name: string]: BlockTypeSettings;
+}
+interface AnyAction {
+  type: string;
+  [x: string]: unknown;
+}
+interface SetBlockRendererSettingsAction extends AnyAction {
+  type: typeof SET_BLOCK_RENDERER_SETTINGS;
+  settings: BlockRendererSettings;
+  name: string;
+}
+
+interface AddBlockTypesAction extends AnyAction {
+  type: typeof ADD_BLOCK_TYPES;
+  blockTypes: BlockTypeInterface[];
+}
+
+export type BlockActionTypes =
+  | SetBlockRendererSettingsAction
+  | AddBlockTypesAction
+  | ReturnType<() => { type: "NOOP" }>;

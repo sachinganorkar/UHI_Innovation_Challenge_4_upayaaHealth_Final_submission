@@ -7,8 +7,7 @@
  * External dependencies
  */
 import classnames from "clsx";
-// @ts-expect-error types
-import { css } from "emotion";
+import { css } from "@emotion/css";
 
 import type { FormTheme } from "../../../types";
 

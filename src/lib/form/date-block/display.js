@@ -1,3 +1,4 @@
+/* eslint-disable import/order */
 /* eslint-disable consistent-return */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/prop-types */
@@ -7,13 +8,10 @@
 import classnames from "clsx";
 import dayJs from "dayjs";
 import CustomParseFormat from "dayjs/plugin/customParseFormat";
-// @ts-ignore
-import { css } from "emotion";
+import { css } from "@emotion/css";
 // @ts-ignore
 import MaskedInput from "react-text-mask";
 import tinyColor from "tinycolor2";
-// @ts-ignore types
-// @ts-ignore types
 
 /**
  * Internal Dependencies

@@ -12,7 +12,7 @@ import { useSelect, useDispatch } from "@wordpress/data";
  */
 import classnames from "clsx";
 // @ts-expect-error notypes
-import { css } from "emotion";
+import { css } from "@emotion/css";
 
 /**
  * Internal Dependencies

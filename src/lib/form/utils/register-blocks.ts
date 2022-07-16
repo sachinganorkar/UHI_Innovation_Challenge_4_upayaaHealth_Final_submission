@@ -1,7 +1,15 @@
-/* eslint-disable no-console */
+import registerDataBlock from "./date";
+import registerLongTextBlock from "./long-text";
+import registerMultipleChoiceBlock from "./multiple-choice";
+import registerNumberBlock from "./number";
+import registerShortTextBlock from "./short-text";
 
 const registerCoreBlocks = () => {
-  console.log("Call functions here");
+  registerDataBlock();
+  registerShortTextBlock();
+  registerNumberBlock();
+  registerMultipleChoiceBlock();
+  registerLongTextBlock();
 };
 
 export default registerCoreBlocks;

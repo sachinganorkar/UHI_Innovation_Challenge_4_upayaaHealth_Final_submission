@@ -11,8 +11,7 @@ import { doAction } from "@wordpress/hooks";
 /**
  * External Dependencies
  */
-// @ts-expect-error notypes
-import { css } from "emotion";
+import { css } from "@emotion/css";
 
 /**
  * Internal Dependencies
@@ -162,7 +161,10 @@ const FieldDisplayWrapper: React.FC<Props> = ({
             margin-top: 15px;
           `}
         >
-          <blockType.display {...props} />
+          {
+            // @ts-expect-error construct
+            <blockType.display {...props} />
+          }
         </div>
       )}
       <BlockFooter shakingErr={shakingErr} isPending={isPending} />

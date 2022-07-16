@@ -4,9 +4,8 @@
 /**
  * External Dependencies
  */
+import { css } from "@emotion/css";
 import classnames from "clsx";
-// @ts-expect-error types
-import { css } from "emotion";
 
 /**
  * Internal Dependencies

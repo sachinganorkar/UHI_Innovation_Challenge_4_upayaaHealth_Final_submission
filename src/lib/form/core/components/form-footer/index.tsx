@@ -8,8 +8,7 @@ import { memo } from "@wordpress/element";
  * External Dependencies
  */
 import classnames from "clsx";
-// @ts-expect-error types
-import { css } from "emotion";
+import { css } from "@emotion/css";
 import tinyColor from "tinycolor2";
 
 /**

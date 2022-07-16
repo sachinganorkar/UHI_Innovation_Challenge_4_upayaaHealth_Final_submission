@@ -2,8 +2,7 @@
 /**
  * External Dependencies
  */
-// @ts-expect-error types
-import { css } from "emotion";
+import { css } from "@emotion/css";
 
 const ArrowIcon = ({ theme }: any) => {
   return (

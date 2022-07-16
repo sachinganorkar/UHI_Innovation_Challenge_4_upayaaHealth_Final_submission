@@ -7,8 +7,9 @@ import { pick, isPlainObject } from "lodash";
 /**
  * Internal Dependencies
  */
+import type { BlockTypeSettings, BlockSupportedFeatures } from "../types";
+
 import { setBlockRendererSettings } from "./set-block-renderer-settings";
-import type { BlockTypeSettings, BlockSupportedFeatures } from "./types";
 /**
  * Registers a new block provided a unique name and an object defining its
  * behavior. Once registered, the block is made available as an option to any
@@ -48,7 +49,7 @@ export const registerBlockType = (
     return;
   }
 
-  if (select(formName).getBlockType(name)) {
+  if (select(formName)?.getBlockType(name)) {
     // eslint-disable-next-line no-console
     console.error(`Block "${name}" is already registered.`);
     return;
@@ -103,7 +104,7 @@ export const registerBlockType = (
   // eslint-disable-next-line no-param-reassign
   settings.attributes = attributes;
 
-  dispatch(formName).addBlockTypes({
+  dispatch(formName)?.addBlockTypes({
     name,
     ...pick(settings, ["attributes", "supports", "logicalOperators"]),
   });

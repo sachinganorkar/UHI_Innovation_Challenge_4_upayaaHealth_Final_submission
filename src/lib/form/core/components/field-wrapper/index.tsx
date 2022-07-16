@@ -18,8 +18,7 @@ import { useRef, useEffect } from "@wordpress/element";
  * External Dependencies
  */
 import classnames from "clsx";
-// @ts-expect-error no types
-import { css } from "emotion";
+import { css } from "@emotion/css";
 
 /**
  * Internal Dependencies

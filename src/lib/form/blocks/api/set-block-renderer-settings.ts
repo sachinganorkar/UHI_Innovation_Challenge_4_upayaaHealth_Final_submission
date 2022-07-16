@@ -13,7 +13,7 @@ import { select, dispatch } from "@wordpress/data";
  */
 import { isFunction, pick } from "lodash";
 
-import type { BlockRendererSettings } from "./types";
+import type { BlockRendererSettings } from "../types";
 /**
  * Set block renderer settings
  * Set block renderer settings is for defining renderer behavior for the block
@@ -38,7 +38,7 @@ export const setBlockRendererSettings = (
     return;
   }
 
-  const blockType = select("quillForms/blocks").getBlockType(name);
+  const blockType = select("quillForms/blocks")?.getBlockType(name);
 
   if (!blockType) {
     console.error(
