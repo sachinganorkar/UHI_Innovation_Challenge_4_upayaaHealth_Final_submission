@@ -7,7 +7,7 @@ import { registerCoreBlocks } from "lib/form/utils";
 
 registerCoreBlocks();
 
-function TriageForm() {
+function TestForm() {
   return (
     <div className="questionForm">
       <Form
@@ -16,62 +16,62 @@ function TriageForm() {
           blocks: [
             {
               name: "short-text",
-              id: "patientName",
+              id: "shorttext",
               attributes: {
                 required: true,
-                label: "Guest's name",
+                label: "Short Text",
+              },
+            },
+            {
+              name: "date",
+              id: "date",
+              attributes: {
+                required: true,
+                label: "Date!",
               },
             },
             {
               name: "number",
-              id: "patientAge",
+              id: "number",
               attributes: {
                 required: true,
-                label: "{{field:patientName}}'s age?",
+                label: "Great {{field:shorttext}}, can you type your age?",
               },
             },
             {
               name: "multiple-choice",
-              id: "patientGender",
+              id: "multiplechoices",
               attributes: {
                 required: true,
                 multiple: false,
                 verticalAlign: false,
-                label: "{{field:patientName}}'s gender?",
+                label: "Multiple Choices?",
                 choices: [
                   {
-                    label: "Female",
-                    value: "female",
+                    label: "Option 1",
+                    value: "option1",
                   },
                   {
-                    label: "Male",
-                    value: "male",
+                    label: "Option 2",
+                    value: "option2",
                   },
                   {
-                    label: "Other",
-                    value: "other",
+                    label: "Option 3",
+                    value: "option3",
+                  },
+                  {
+                    label: "Option 4",
+                    value: "option4",
                   },
                 ],
               },
             },
             {
-              name: "multiple-choice",
-              id: "status",
+              name: "long-text",
+              id: "longtext",
               attributes: {
                 required: true,
-                multiple: false,
-                verticalAlign: false,
-                label: "{{field:patientName}}'s status?",
-                choices: [
-                  {
-                    label: "Emergency",
-                    value: "emergency",
-                  },
-                  {
-                    label: "Non Emergency",
-                    value: "nonemergency",
-                  },
-                ],
+                label: "Long Text!",
               },
             },
           ],
@@ -84,6 +84,6 @@ function TriageForm() {
   );
 }
 
-export default dynamic(() => Promise.resolve(TriageForm), {
+export default dynamic(() => Promise.resolve(TestForm), {
   ssr: false,
 });
