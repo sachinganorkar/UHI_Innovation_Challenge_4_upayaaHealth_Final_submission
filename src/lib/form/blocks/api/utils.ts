@@ -4,7 +4,7 @@
  */
 import { reduce, isEmpty, map } from "lodash";
 
-import type { FormBlocks } from "../types";
+import type { FormBlocks } from "../../types";
 
 /**
  * Internal Dependencies
