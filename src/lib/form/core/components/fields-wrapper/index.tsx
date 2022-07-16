@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable sonarjs/no-duplicate-string */
 /* eslint-disable @typescript-eslint/no-shadow */
 /* eslint-disable consistent-return */
@@ -85,6 +86,7 @@ const FieldsWrapper: React.FC<Props> = ({ applyLogic, isActive }) => {
   const isTouchScreen =
     "ontouchstart" in window ||
     navigator.maxTouchPoints > 0 ||
+    // @ts-ignore
     navigator.msMaxTouchPoints > 0;
   const getFieldsToRender = (): string[] => {
     const fieldIds: string[] = [];

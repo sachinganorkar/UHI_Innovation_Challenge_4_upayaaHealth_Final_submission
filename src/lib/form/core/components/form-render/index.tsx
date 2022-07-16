@@ -41,7 +41,6 @@ const Form: React.FC<Props> = ({
     return formObj;
   };
   return (
-    // @ts-expect-error some error
     <FormContextProvider
       value={{
         formObj: formatFormObj(formObj),

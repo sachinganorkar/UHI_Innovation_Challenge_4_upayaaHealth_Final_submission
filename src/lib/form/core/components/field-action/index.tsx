@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable import/no-cycle */
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -28,6 +29,7 @@ const FieldAction = ({ clickHandler, show }: any) => {
   const isTouchScreen =
     "ontouchstart" in window ||
     navigator.maxTouchPoints > 0 ||
+    // @ts-ignore
     navigator.msMaxTouchPoints > 0;
 
   return (
@@ -37,6 +39,7 @@ const FieldAction = ({ clickHandler, show }: any) => {
       })}
     >
       {blockType?.nextBtn ? (
+        // @ts-expect-error component
         <blockType.nextBtn onClick={clickHandler} />
       ) : (
         <>

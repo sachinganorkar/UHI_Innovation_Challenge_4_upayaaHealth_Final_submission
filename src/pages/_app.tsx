@@ -18,7 +18,10 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <div>
       <DefaultSeo {...defaultSEOConfig} />
-      <Component {...pageProps} />
+      {
+        // @ts-expect-error component
+        <Component {...pageProps} />
+      }
     </div>
   );
 };

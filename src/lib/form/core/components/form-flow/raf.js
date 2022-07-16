@@ -1,3 +1,4 @@
+// @ts-nocheck
 /* eslint-disable func-names */
 /* eslint-disable no-undef */
 /* =================================== */

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable sonarjs/no-duplicate-string */
@@ -39,6 +40,7 @@ const FieldDisplayWrapper: React.FC<Props> = ({
   const isTouchScreen =
     "ontouchstart" in window ||
     navigator.maxTouchPoints > 0 ||
+    // @ts-ignore
     navigator.msMaxTouchPoints > 0;
 
   useHandleFocus(inputRef, isActive, isTouchScreen);

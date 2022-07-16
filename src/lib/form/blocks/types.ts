@@ -6,7 +6,7 @@ import type { BlockAttributes, IconRenderer } from "../types";
 import type {
   SET_BLOCK_RENDERER_SETTINGS,
   ADD_BLOCK_TYPES,
-} from "./store/constants";
+} from "./rstore/constants";
 
 interface ControlsProps {
   id: string;

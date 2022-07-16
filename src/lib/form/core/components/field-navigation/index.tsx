@@ -11,7 +11,6 @@ import { useSelect, useDispatch } from "@wordpress/data";
  * External Dependencies
  */
 import classnames from "clsx";
-// @ts-expect-error notypes
 import { css } from "@emotion/css";
 
 /**

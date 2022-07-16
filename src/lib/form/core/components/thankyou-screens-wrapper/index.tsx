@@ -28,6 +28,7 @@ const ThankyouScreensWrapper = () => {
       !blockTypes["thankyou-screen"]?.display ? (
         <DefaultThankYouScreen />
       ) : (
+        // @ts-expect-error component
         <blockType.display
           key={currentThankYouScreen?.id}
           id={currentThankYouScreen?.id}
