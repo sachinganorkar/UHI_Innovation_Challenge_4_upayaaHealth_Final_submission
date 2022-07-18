@@ -56,7 +56,7 @@
   },
   "block.defaultThankYouScreen.label": {
     "title": "Default Thank you screen label",
-    "default": "Thanks for filling this in.\n\n We will contact you soon",
+    "default": "Thanks for filling this in.\n\n We will proceed further with Demo",
     "allowedFormats": ["bold", "link", "italic"],
     "category": "buttons-hints-placeholders"
   },
