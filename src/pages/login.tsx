@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable sonarjs/no-duplicate-string */
 /* eslint-disable @typescript-eslint/no-shadow */
 /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -55,6 +56,7 @@ export default function Login() {
       //   // if (err.code === '' 'NotAuthorizedException')
 
       // }
+      // @ts-ignore
       setError("password", { type: "Custom", message: err.message });
     }
   };
